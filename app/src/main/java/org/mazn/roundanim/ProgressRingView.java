@@ -11,7 +11,7 @@ import android.view.View;
 /**
  * Created by Administrator on 2015/8/4.
  */
-public class SampleView extends LetterSpacingTextView {
+public class ProgressRingView extends LetterSpacingTextView {
     private static final String TAG = "SampleView";
     private Paint[] mPaints;
     private Paint mFramePaint;
@@ -32,15 +32,15 @@ public class SampleView extends LetterSpacingTextView {
     private int mRingForeground;
     private int mRingBackground;
 
-    public SampleView(Context context) {
+    public ProgressRingView(Context context) {
         this(context, null);
     }
 
-    public SampleView(Context context, AttributeSet attrs) {
+    public ProgressRingView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public SampleView(final Context context, AttributeSet attrs, int defStyleAttr) {
+    public ProgressRingView(final Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
 
@@ -150,12 +150,12 @@ public class SampleView extends LetterSpacingTextView {
 
     public void setTotal(int total) {
         mTotal = total;
-        mAngle = SampleView.getAngle(mCurrent, mTotal);
+        mAngle = ProgressRingView.getAngle(mCurrent, mTotal);
     }
 
     public void setCurrent(int current) {
         mCurrent = current;
-        mAngle = SampleView.getAngle(mCurrent, mTotal);
+        mAngle = ProgressRingView.getAngle(mCurrent, mTotal);
         invalidate();
     }
 

@@ -16,7 +16,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <org.mazn.roundanim.SampleView
+        <org.mazn.roundanim.ProgressRingView
             android:id="@+id/orange"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -34,7 +34,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <org.mazn.roundanim.SampleView
+        <org.mazn.roundanim.ProgressRingView
             android:id="@+id/green"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -52,7 +52,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <org.mazn.roundanim.SampleView
+        <org.mazn.roundanim.ProgressRingView
             android:id="@+id/blue"
             android:layout_width="100dp"
             android:layout_height="100dp"
