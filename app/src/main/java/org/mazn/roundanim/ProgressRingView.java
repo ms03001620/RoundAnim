@@ -12,7 +12,7 @@ import android.view.View;
  * Created by Administrator on 2015/8/4.
  */
 public class ProgressRingView extends LetterSpacingTextView {
-    private static final String TAG = "SampleView";
+    private static final String TAG = "ProgressRingView";
     private Paint[] mPaints;
     private Paint mFramePaint;
     private boolean[] mUseCenters;

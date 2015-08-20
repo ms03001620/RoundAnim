@@ -17,12 +17,12 @@
         android:orientation="vertical">
 
         <org.mazn.roundanim.ProgressRingView
-            android:id="@+id/orange"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:gravity="center"
-            android:textColor="#FFcc80"
-            android:textSize="18sp" />
+        android:id="@+id/orange"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:textColor="#FFcc80"
+        android:textSize="18sp" />
 
     </LinearLayout>
 
