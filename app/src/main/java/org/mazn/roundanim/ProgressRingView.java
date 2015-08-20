@@ -115,9 +115,11 @@ public class ProgressRingView extends LetterSpacingTextView {
     private void drawArcs(Canvas canvas, RectF oval, boolean useCenter, Paint paint) {
         int oldColor = paint.getColor();
         canvas.drawOval(oval, paint);
-        paint.setColor(mRingForeground);
-        canvas.drawArc(oval, mStart, mSweep, useCenter, paint);
-        paint.setColor(oldColor);
+        if(mCurrent!=0){
+            paint.setColor(mRingForeground);
+            canvas.drawArc(oval, mStart, mSweep, useCenter, paint);
+            paint.setColor(oldColor);
+        }
     }
 
     @Override
