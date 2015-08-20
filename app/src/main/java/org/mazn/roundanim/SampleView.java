@@ -150,12 +150,22 @@ public class SampleView extends LetterSpacingTextView {
 
     public void setTotal(int total) {
         mTotal = total;
-        mAngle = Utils.getAngle(mCurrent, mTotal);
+        mAngle = SampleView.getAngle(mCurrent, mTotal);
     }
 
     public void setCurrent(int current) {
         mCurrent = current;
-        mAngle = Utils.getAngle(mCurrent, mTotal);
+        mAngle = SampleView.getAngle(mCurrent, mTotal);
         invalidate();
+    }
+
+
+    public static double getPercent(double current ,double total){
+        return current / total;
+    }
+
+    public static int getAngle(double current, double total){
+        double percent = getPercent(current, total);
+        return (int)(360 * percent);
     }
 }
