@@ -96,10 +96,12 @@ public class ProgressRingView extends LetterSpacingTextView {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        Log.d(TAG, "onDraw");
         drawArcs(canvas, mBigOval, mUseCenters[2], mPaints[2]);
         super.onDraw(canvas);
 
         if (mSweep <= mAngle) {
+            Log.d(TAG, "onDraw sweep:" + mSweep + ", angle:" + mAngle);
             setText(String.valueOf(animCurrent(mSweep)) + "/" + mTotal);
             invalidate();
         }
