@@ -2,7 +2,6 @@ package org.mazn.roundanim;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.RectF;
 import android.text.style.ReplacementSpan;
 
 public class RoundedBackgroundSpan extends ReplacementSpan {
@@ -21,7 +20,7 @@ public class RoundedBackgroundSpan extends ReplacementSpan {
         paint.setColor(oldColor);
         String[] strings = text.toString().split("/");
 
-        if(strings!=null && strings.length>1){
+        if (strings != null && strings.length > 1) {
 
             float xxx = x + fixTextWidth(paint, text, start, end)/2 - paint.measureText("/",0,1)/2;
             canvas.drawText("/", xxx, y+10, paint);
